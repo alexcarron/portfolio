@@ -1,0 +1,184 @@
+<!-- Alexander Carron - Jul 4 2022 -->
+
+
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<!-- ! METADATA -->
+		<meta charset='UTF-8'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<meta name='author' content='Alexander Carron'>
+		<meta 
+			name='description' 
+			content="Alexander Carron is an aspiring software engineer with computer programming and design skills. This portfolio shows every project I've created and displays all my work."
+		>
+		<meta 
+			name='keywords' 
+			content='portfolio, projects, Alex Carron, Carron, Alexander, work, websites, web design, web development, information technology, computer science'
+		>
+		
+		<!-- ! EXTERNAL FILES -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<link rel='stylesheet' href='./styles/reset.css' type='text/css'>
+		<link rel='stylesheet' href='./styles/main.css' type='text/css'>
+		<script src='./scripts/main.js'></script>
+		
+		<title> Alexander Carron Portfolio — Software Engineer (HTML, CSS, JavaScript) </title>
+	</head>
+	
+	<body>
+		<!-- ^ NAVIGATION MENU -->
+		<nav>
+			<button id="menu_button" onclick="showMenu()"> <img src="./icons/menu.svg" alt="Navigation Menu Button"> </button>
+			<div id="nav_links">
+				<a href="#home">Home</a>
+				<a href="#about_section">About</a>
+				<a href="#skill_section">Skills</a>
+				<a href="#projects_section">Projects</a>
+				<!-- <a href="#contact_section">Contact</a> -->
+			</div>
+			<button id="contact_button"> <a href="mailto:thealexcarron@gmail.com">Contact Me</a> </button>
+		</nav>
+
+
+		<!-- ^ HEADER -->
+		<header id="home">
+			<h1> Alexander Carron's Portfolio </h1>
+			<h2> Software Engineer </h2>
+			
+			<img src="./images/alex-carron-logo.png" alt="Alex Carron Logo">
+			
+			<video muted loop autoplay>
+				<source src="./videos/coding-stock-footage.mp4" type="video/mp4">
+			</video>
+		</header>
+
+
+		<!-- ^ MAIN -->
+		<main>
+			
+			<section id="about_section">
+				<h2> Who Am I? </h2>
+				<div>
+					<p> Hello! My name is Alex, and I am currently an aspiring software engineer in high school. I've always been interested in problem-solving and used coding to build many projects. In middle school, I created games using block coding and eventually taught myself Python and JavaScript. By high school, I used my coding knowledge to enhance my other hobbies, for example, hosting online game shows. Now I'm using this skill to pursue a career in computer science. </p>
+					<a href="./images/selfie.jpeg"><img src="./images/selfie.jpeg" alt="Picture of myself smiling"></a>
+				</div>
+			</section>
+			
+			<section id="skill_section">
+				<h2> Skilled In </h2>
+				<div>
+					<a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML">
+						<figure>
+							<figcaption>HTML</figcaption>
+							<img src="./images/html-file-icon.png" alt="HTML File Icon">
+						</figure>
+					</a>
+					<a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS">
+						<figure>
+							<figcaption>CSS</figcaption>
+							<img src="./images/css-file-icon.png" alt="CSS File Icon">
+						</figure>
+					</a>
+					<a href="https://www.javascript.com/">
+						<figure>
+							<figcaption>JavaScript</figcaption>
+							<img src="./images/javascript-file-icon.png" alt="JavaScript File Icon">
+						</figure>
+					</a>
+					<a href="https://www.adobe.com/photoshop">
+						<figure>
+							<figcaption>Photoshop</figcaption>
+							<img src="./images/photoshop-file-icon.png" alt="Photoshop File Icon">
+						</figure>
+					</a>
+					<a href="https://www.adobe.com/premiere">
+						<figure>
+							<figcaption>Premiere</figcaption>
+							<img src="./images/premiere-pro-file-icon.png" alt="Premiere Pro File Icon">
+						</figure>
+					</a>
+					<a href="https://git-scm.com/">
+						<figure>
+							<figcaption>Git</figcaption>
+							<img src="./images/git-file-icon.png" alt="Git File Icon">
+						</figure>
+					</a>
+				</div>
+			</section>
+			
+			<section id="projects_section">
+				<h2> My Projects </h2>
+					<div class="projects_container">
+						<div class="project_container">
+							<img src="./images/portfolio-proj-screenshot.png" alt="Screenshot of Portfolio Website">
+							<div class="project_info_container">
+								<h3> Portfolio </h3>
+								<p> A website that showcases my projects and other examples of my work. </p>
+								<button><a href="https://github.com/alexcarron/portfolio"> Go To Project </a></button>
+							</div>
+						</div>
+						<div class="project_container">
+							<img src="./images/brobot-proj-screenshot.png" alt="Screenshot of Discord Bot Code">
+							<div class="project_info_container">
+								<h3> BroBot the Discord Bot </h3>
+								<p> An automated program that lets people run commands on the instant messaging social platform, Discord. </p>
+								<button><a href="https://github.com/alexcarron/brobot">Go To Project</a></button>
+							</div>
+						</div>
+						<div class="project_container">
+							<img src="./images/admin-dashboard-proj-screenshot.png" alt="Screenshot of Fake Admin Dashboard Website">
+							<div class="project_info_container">
+								<h3> Fake Admin Dashboard </h3>
+								<p> A nonfunctional admin dashboard I made to practice my web design skills. </p>
+								<button><a href="https://github.com/alexcarron/admin-dashboard-proj">Go To Project</a></button>
+							</div>
+						</div>
+						<div class="project_container">
+							<img src="./images/tic-tac-toe-proj-screenshot.png" alt="Screenshot of Tic-Tac-Toe Game Website">
+							<div class="project_info_container">
+								<h3> Tic-Tac-Toe Game </h3>
+								<p> An HTML, CSS, and JS made a Tic-Tac-Toe game I made to practice my JavaScript skills. </p>
+								<button><a href="https://github.com/alexcarron/tic-tac-toe-proj">Go To Project</a></button>
+							</div>
+						</div>
+					</div>
+			</section>
+			
+			<!-- REMOVE FORM
+			<section id="contact_section">
+				<h2> Get In Touch </h2>
+				<form action="./scripts/email.form.php" method="post" name="email_form">
+					<input type="text" name="username" id="username_input" placeholder="Name">
+					<input type="email" name="email" id="email_input" placeholder="Email">
+					<textarea name="message" id="message_input" placeholder="Message" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+					
+					<button type="submit"> Send Message </button>
+				</form>
+			</section>
+			-->
+			
+		</main>
+
+
+		<!-- ^ FOOTER -->
+		<footer>
+			<section>
+				<a href="https://linkedin.com/in/alexcarron"> <img src="./icons/linkedin.svg" alt="LinkedIn"> </a>
+				<a href="https://github.com/alexcarron"> <img src="./icons/github.svg" alt="GitHub"> </a>
+				<a href="mailto:thealexcarron@gmail.com"> <img src="./icons/email.svg" alt="Email"> </a>
+				<a href="https://youtube.com/littleluigi"> <img src="./icons/youtube.svg" alt="Youtube"> </a>
+			</section>
+			<section>
+				<a href="#home">Home</a>
+				<a href="#about_section">About</a>
+				<a href="#skill_section">Skills</a>
+				<a href="#projects_section">Projects</a>
+				<!-- <a href="#contact_section">Contact</a> -->
+			</section>
+		</footer>
+	</body>
+</html>
