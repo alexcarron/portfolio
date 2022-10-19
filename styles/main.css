@@ -2,14 +2,14 @@
 	--main-color: #fdfffc;
 	--secondary-color: #e8f5e1;
 	--tertiary-color: #c9e8ba;
-	
+
 	--main-contrast-color: #142e14;
 	--secondary-contrast-color: #233b1d;
 	--tertiary-contrast-color: #3e5234;
 	--quaternary-contrast-color: #7e8672;
-	
+
 	--highlight-color: #ebb800;
-	
+
 	--h1-responsive-font-size: 5vw;
 	--h2-responsive-font-size: 4vw;
 	--h1-font-size: 72px;
@@ -37,24 +37,24 @@ nav {
 	height: 70px;
 	padding: 10px;
 	z-index: 4;
-	
+
 	background-color: var(--main-contrast-color);
 	box-shadow: 0 0 10px 0px #00000080;
-	
+
 	color: var(--main-color);
 }
-		
+
 	/* @ Nav Menu Links */
-	nav>div#nav_links {		
+	nav>div#nav_links {
 		position: static;
 		flex-direction: row;
 	}
-	nav>div#nav_links a {		
+	nav>div#nav_links a {
 		margin: 0px 15px;
-		
+
 		cursor: pointer;
 		transition: all 150ms ease;
-		
+
 		color: var(--main-color);
 		font-size: var(--p-font-size);
 		text-decoration: none;
@@ -68,44 +68,44 @@ nav {
 		color: var(--tertiary-color);
 		font-weight: bold;
 	}
-		
+
 	/* @ Logo */
-	nav>img {		
+	nav>img {
 		height: var(--p-font-size);
-		
+
 		margin-right: auto;
 	}
-	
+
 	/* @ Hamburger Menu Button */
 	nav button#menu_button {
 		background-color: inherit;
 		border: inherit;
 		display: none;
 	}
-		
+
 	/* @ Contact Button */
-	nav button#contact_button {		
+	nav button#contact_button {
 		margin-left: auto;
 		border: none;
 		border-radius: 5px;
 		padding: 10px 50px;
-		
+
 		transition: all 200ms ease;
-		
+
 		background-color: var(--tertiary-color);
 		cursor: pointer;
 		filter: drop-shadow(0px 1px 1px #00000040);
-		
+
 		color: var(--main-contrast-color);
 		font-size: var(--p-font-size);
 		font-weight: bold;
 	}
-	nav button#contact_button:hover {		
+	nav button#contact_button:hover {
 		border-radius: 25px;
-		
+
 		filter: drop-shadow(2px 3px 10px #00000080);
 	}
-	
+
 
 /* ! HEADER */
 header {
@@ -116,9 +116,9 @@ header {
 	height: 570px;
 	padding: 50px;
 	padding-top: calc(50px + 70px);
-	
+
 	background-color: var(--tertiary-contrast-color);
-	
+
 	color: var(--main-color);
 }
 
@@ -129,33 +129,33 @@ header {
 		left: 0;
 		width: 100vw;
 		height: 570px;
-		
+
 		object-fit: cover;
 		object-position: 50% 50%;
 		z-index: 1;
-		
+
 		filter: brightness(10%);
 		opacity: 90%;
 	}
-	
+
 	/* @ Website Title */
 	header h1 {
 		color: var(--main-color);
 		font-weight: bold;
-		font-size: var(--h1-responsive-font-size);
+		font-size: 60px;
 		text-shadow: 5px 5px 3px #000000;
 		z-index: 2;
 	}
-		
+
 	/* @ Website Subtitle */
 	header h2 {
 		color: var(--tertiary-color);
 		font-weight: normal;
-		font-size: var(--h2-responsive-font-size);
+		font-size: 48px;
 		text-shadow: 3px 3px 2px #000000;
 		z-index: 2;
 	}
-	
+
 	/* @ Website Logo */
 	header img {
 		margin-top: var(--h3-font-size);
@@ -165,16 +165,16 @@ header {
 		z-index: 2;
 	}
 
-	
+
 
 /* ! MAIN */
 	/* * SECTIONS */
 	main>section {
 		box-sizing: border-box;
 		padding: 100px 50px;
-		
+
 		background-color: var(--main-color);
-		
+
 		color: var(--main-contrast-color);
 	}
 
@@ -182,11 +182,11 @@ header {
 	main>section:nth-child(2n) {
 		background-color: var(--secondary-color);
 	}
-	
+
 	/* * Section Header */
 	main>section h2 {
 		margin-bottom: var(--h3-font-size);
-		
+
 		color: var(--main-contrast-color);
 		font-size: var(--h2-font-size);
 		font-weight: bold;
@@ -209,7 +209,7 @@ header {
 		line-height: 1.8;
 		text-shadow: 1px 1px 1px #00000020;
 	}
-	
+
 	/* @ About Section */
 		/* ^ About Section Content Container */
 		main>section#about_section div {
@@ -217,7 +217,7 @@ header {
 			justify-content: space-between;
 			gap: var(--h3-font-size);
 		}
-		
+
 		/* ^ About Section Image */
 		main>section#about_section img {
 			aspect-ratio: 1/1;
@@ -226,7 +226,7 @@ header {
 			transition: all 200ms ease;
 			border-radius: 15px;
 			filter: drop-shadow(0px 0px 5px #00000040);
-			
+
 			object-fit: cover;
 			object-position: 50% 50%;
 		}
@@ -235,7 +235,7 @@ header {
 			filter: drop-shadow(0px 0px 10px #000000);
 			cursor: pointer;
 		}
-	
+
 	/* @ Skills Section */
 		/* ^ Skills Section Skill Container */
 		main>section#skill_section div {
@@ -243,7 +243,7 @@ header {
 			flex-wrap: wrap;
 			gap: var(--h3-font-size);
 		}
-		
+
 		/* ^ Skills Section Skill Containers */
 		main>section#skill_section div figure {
 			box-sizing: border-box;
@@ -253,29 +253,29 @@ header {
 			padding: var(--p-font-size);
 			border-radius: var(--p-font-size);
 			gap: 15px;
-			
+
 			background-color: var(--tertiary-contrast-color);
 			box-shadow: 10px 10px 0px var(--secondary-contrast-color);
 			filter: drop-shadow(3px 3px 2px #00000040);
 			transition: all 200ms ease;
 		}
-		
+
 		/* ^ Skills Section Skill Containers */
 		main>section#skill_section div figure:hover {
 			border-radius: 50px;
 			filter: drop-shadow(5px 5px 5px #00000080);
 			cursor: pointer;
 		}
-		
+
 		/* ^ Skills Section Subheading */
 		main>section#skill_section figcaption {
 			font-size: 24px;
 			font-weight: bold;
-			
+
 			color: var(--tertiary-color);
 			text-align: center;
 		}
-		
+
 	/* @ Projects Section */
 		/* ^ Projects Section Projects Container */
 		main>section#projects_section div.projects_container {
@@ -283,14 +283,14 @@ header {
 			flex-direction: column;
 			gap: var(--h1-font-size);
 		}
-		
+
 		/* ^ Projects Section Project Containers */
 		main>section#projects_section div.project_container {
 			display: flex;
 			justify-content: flex-start;
 			gap: var(--p-font-size);
 		}
-		
+
 		/* ^ Projects Section Project Info Containers */
 		main>section#projects_section div.project_info_container {
 			display: flex;
@@ -299,15 +299,15 @@ header {
 			gap: 0px;
 			margin-top: 10px;
 		}
-		
-		/* ^ Projects Section Project Description */ 
+
+		/* ^ Projects Section Project Description */
 		main>section#projects_section p {
 			margin-top: 15px;
-			
+
 			font-size: var(--small-p-font-size);
 			line-height: 1.3;
 		}
-		
+
 		/* ^ Projects Section Project Screenshots */
 		main>section#projects_section img {
 			aspect-ratio: 1/1;
@@ -315,7 +315,7 @@ header {
 			transition: all 200ms ease;
 			border-radius: 15px;
 			filter: drop-shadow(0px 0px 5px #00000040);
-			
+
 			object-fit: cover;
 			object-position: 50% 50%;
 		}
@@ -324,7 +324,7 @@ header {
 			filter: drop-shadow(0px 0px 10px #000000);
 			cursor: pointer;
 		}
-		
+
 		/* ^ Projects Section Project Buttons */
 		main>section#projects_section button {
 			margin-top: auto;
@@ -332,82 +332,82 @@ header {
 			padding: 15px 30px;
 			border: none;
 			border-radius: 5px;
-			
+
 			background-color: var(--highlight-color);
 			cursor: pointer;
 			filter: drop-shadow(0px 1px 1px #00000020);
 			transition: all 200ms ease;
-			
+
 			color: var(--main-color);
 			font-weight: bold;
 			font-size: var(--p-font-size);
 		}
 		main>section#projects_section button:hover {
 			border-radius: 50px;
-			
+
 			filter: drop-shadow(0px 3px 5px #00000040);
 		}
-	
+
 	/* Remove Form
 		main>section#contact_section form {
 			display: flex;
 			flex-direction: column;
 			gap: 10px;
 		}
-		
+
 		main>section#contact_section input {
 			padding: 20px;
 			border: 2px var(--quaternary-contrast-color) solid;
 			border-radius: 15px;
-			
+
 			font-size: var(--small-p-font-size);
 			font-weight: 600;
 		}
 		main>section#contact_section input:focus {
 			filter: drop-shadow(2px 3px 4px #00000040);
 		}
-		
+
 		main>section#contact_section textarea {
 			height: 98px;
 			padding: 20px;
 			border: 2px var(--quaternary-contrast-color) solid;
 			border-radius: 15px;
-			
+
 			font-size: var(--small-p-font-size);
 			font-weight: 600;
 		}
 		main>section#contact_section textarea:focus {
 			filter: drop-shadow(2px 3px 4px #00000040);
 		}
-		
+
 		main>section#contact_section ::placeholder {
 			color: var(--quaternary-contrast-color);
 			font-weight: normal;
 		}
-		
+
 		main>section#contact_section button[type="submit"] {
 			width: max-content;
 			margin-top: var(--p-font-size);
 			padding: 15px 30px;
 			border: none;
 			border-radius: 5px;
-			
+
 			background-color: var(--highlight-color);
 			cursor: pointer;
 			filter: drop-shadow(0px 1px 1px #00000020);
 			transition: all 200ms ease;
-			
+
 			color: var(--main-color);
 			font-weight: bold;
 			font-size: var(--p-font-size);
 		}
 		main>section#contact_section button[type="submit"]:hover {
 			border-radius: 25px;
-			
+
 			filter: drop-shadow(3px 5px 5px #00000080);
 		}
 	*/
-		
+
 /* ! FOOTER */
 footer {
 	box-sizing: border-box;
@@ -417,10 +417,10 @@ footer {
 	align-items: center;
 	padding: var(--p-font-size);
 	gap: var(--small-p-font-size);
-	
+
 	background-color: var(--main-contrast-color);
 	box-shadow: 0 0 15px #00000080;
-	
+
 	color: var(--main-color);
 	text-align: center;
 }
@@ -432,24 +432,24 @@ footer {
 		align-items: center;
 		row-gap: 10px;
 	}
-	
+
 	/* @ Footer Social Media Icons */
 	footer img {
 		height: var(--h2-font-size);
-		
+
 		transition: all 200ms ease;
 	}
 	footer img:hover {
 		filter: drop-shadow(3px 3px 3px #00000080);
 	}
-		
+
 	/* @ Footer Links */
-	footer a {		
+	footer a {
 		margin: 0px 10px;
-		
+
 		cursor: pointer;
 		transition: all 150ms ease;
-		
+
 		color: var(--secondary-color);
 		font-size: var(--small-p-font-size);
 		text-decoration: none;
@@ -459,21 +459,29 @@ footer {
 		filter: brightness(120%);
 	}
 
-	
-	
+
+
 /* ! MEDIA QUERIES */
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 990px) {
 	/* @ HEADER */
 	header {
 		height: 270px;
 		justify-content: center;
 	}
-	
+
+		header h1 {
+			font-size: 5vw;
+		}
+
+		header h2 {
+			font-size: 4vw;
+		}
+
 	/* @ Header Video Background */
 	header>video {
 		height: 270px;
 	}
-	
+
 	/* @ Website Logo */
 	header>img {
 		display: none;
@@ -487,21 +495,26 @@ footer {
 		padding: 30px;
 		padding-top: 100px;
 		justify-content: center;
-		
+
 	}
-	
+
 	/* @ Header Video Background */
 	header>video {
 		height: 220px;
 	}
-	
+
 	/* @ NAV */
 	nav {
 		justify-content: flex-start;
 	}
-	
+
 	/* @ Nav Contact Me Button */
 	nav>button#contact_button {
+		display: none;
+	}
+
+	/* @ Projects Section */
+	main>section#projects_section img {
 		display: none;
 	}
 }
@@ -516,12 +529,12 @@ footer {
 		--p-font-size: 20px;
 		--small-p-font-size: 16px;
 	}
-	
+
 	/* @ NAV Links */
 	nav>div#nav_links {
 		display: none;
 	}
-	
+
 	/* @ NAV Hamburger Menu Button */
 	nav button#menu_button {
 		box-sizing: border-box;
@@ -530,8 +543,8 @@ footer {
 		align-items: center;
 		height: 70px;
 		width: 70px;
-		
-		
+
+
 		cursor: pointer;
 		transition: transform 200ms ease;
 		transform: translateX(0px);
@@ -539,14 +552,14 @@ footer {
 		nav button#menu_button img {
 			height: 50px;
 		}
-	
+
 	/* @ Nav Contact Me Button */
 	nav>button#contact_button {
 		display: flex;
 		padding: 10px 15px;
 		font-size: var(--small-p-font-size);
 	}
-	
+
 	/* @ Nav Links Container */
 	nav>div#nav_links {
 		display: flex;
@@ -555,9 +568,9 @@ footer {
 		left: -150px;
 		flex-direction: column;
 		padding: 5px;
-		
+
 		background-color: var(--main-contrast-color);
-				
+
 		transition: left 200ms ease;
 		z-index: 1;
 	}
@@ -567,20 +580,20 @@ footer {
 		color: var(--main-color);
 		margin: 0;
 		padding: 10px;
-		
+
 		text-align: center;
 	}
-	
+
 	/* Text Align */
 	html {
 		text-align: center;
 	}
-	
+
 	/* @ About Section */
 	main>section#about_section div {
 		flex-direction: column;
 	}
-	
+
 		/* ^ About Image */
 		main>section#about_section a {
 			width: 100%;
@@ -591,17 +604,17 @@ footer {
 			width: 100%;
 
 			max-width: none;
-			
+
 			object-fit: cover;
 			object-position: 50% 50%;
 		}
-		
+
 	/* @ Skills Section */
 	main>section#skill_section div {
 		flex-direction: column;
 		align-items: center;
 	}
-		
+
 	/* @ Projects Section */
 	main>section#projects_section img {
 		display: none;
@@ -646,8 +659,8 @@ strong {
 /* * Grid Templates */
 .grid-contianer {
 	display: grid;
-	grid-template: 
-		1fr / 
+	grid-template:
+		1fr /
 			1fr;
 	grid-auto-rows: 1fr;
 	grid-auto-columns: 1fr;
