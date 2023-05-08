@@ -1,11 +1,11 @@
 :root {
 	--main-color: #fdfffc;
 	--secondary-color: #e8f5e1;
-	--tertiary-color: #c9e8ba;
+	--tertiary-color: #e3ffd5;
 
 	--main-contrast-color: #142e14;
-	--secondary-contrast-color: #233b1d;
-	--tertiary-contrast-color: #3e5234;
+	--secondary-contrast-color: #364233;
+	--tertiary-contrast-color: #465240;
 	--quaternary-contrast-color: #7e8672;
 
 	--highlight-color: #ebb800;
@@ -491,6 +491,22 @@ footer {
 	header>img {
 		display: none;
 	}
+
+	/* @ NAV */
+	nav {
+		justify-content: flex-start;
+	}
+
+	/* @ Nav Contact Me Button */
+	nav>button#contact_button {
+		display: none;
+	}
+
+	/* @ Projects Section */
+	main>section#projects_section img {
+		display: none;
+	}
+
 }
 
 @media only screen and (max-width: 780px) {
@@ -508,19 +524,9 @@ footer {
 		height: 220px;
 	}
 
-	/* @ NAV */
-	nav {
-		justify-content: flex-start;
-	}
-
-	/* @ Nav Contact Me Button */
-	nav>button#contact_button {
-		display: none;
-	}
-
-	/* @ Projects Section */
-	main>section#projects_section img {
-		display: none;
+	nav>div#nav_links>a {
+		font-size: var(--small-p-font-size);
+		margin: 0px 8px;
 	}
 }
 
@@ -570,7 +576,7 @@ footer {
 		display: flex;
 		position: absolute;
 		top: 0;
-		left: -150px;
+		left: -162px;
 		flex-direction: column;
 		padding: 5px;
 
@@ -583,6 +589,7 @@ footer {
 	nav>div#nav_links a {
 		background-color: var(--main-contrast-color);
 		color: var(--main-color);
+		font-size: var(--p-font-size);
 		margin: 0;
 		padding: 10px;
 
