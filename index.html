@@ -1,54 +1,56 @@
-<!-- Alexander Carron - Oct 24 2022 -->
+<!-- Alexander Carron - Portfolio -->
 
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 	<head>
-		<!-- ! METADATA -->
-		<meta charset='UTF-8'>
-		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-		<meta name='author' content='Alexander Carron'>
+		<!-- METADATA -->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Alexander Carron">
 		<meta
-			name='description'
-			content="Alexander Carron is an aspiring software engineer with software design and development skills. This portfolio shows every project I've created and displays all my work."
+			name="description"
+			content="I'm Alex Carron, a full-stack software engineer who likes owning features end to end and building tools that make the development workflow easier. This is a closer look behind my resume."
 		>
 		<meta
-			name='keywords'
-			content='portfolio, projects, software engineering, Alex Carron, Carron, Alexander, work, websites, web design, web development, information technology, computer science'
+			name="keywords"
+			content="Alex Carron, Alexander Carron, software engineer, full-stack developer, portfolio, projects, React, TypeScript, Java, Spring Boot, RIT"
 		>
 
-		<!-- ! EXTERNAL FILES -->
+		<!-- EXTERNAL FILES -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-		<link rel='stylesheet' href='./styles/reset.css' type='text/css'>
-		<link rel='stylesheet' href='./styles/main.css' type='text/css'>
-		<script src='./scripts/main.js'></script>
+		<link rel="stylesheet" href="./styles/reset.css" type="text/css">
+		<link rel="stylesheet" href="./styles/main.css" type="text/css">
+		<script src="./scripts/main.js"></script>
 
 		<link rel="icon" type="image/png" href="./images/alex-carron-logo.png">
 
-		<title> Alex Carron Portfolio — Software Engineer </title>
+		<title> Alex Carron, Software Engineer </title>
 	</head>
 
 	<body>
-		<!-- ^ NAVIGATION MENU -->
+		<!-- NAVIGATION MENU -->
 		<nav>
 			<button id="menu_button" onclick="showMenu()"> <img src="./icons/menu.svg" alt="Navigation Menu Button"> </button>
 			<div id="nav_links">
-				<a href="#home">Home</a>
-				<a href="#about_section">About</a>
-				<a href="#skill_section">Certifications</a>
-				<a href="#projects_section">Projects</a>
-				<!-- <a href="#contact_section">Contact</a> -->
+				<a href="#home"> Home </a>
+				<a href="#who_i_am"> Who I Am </a>
+				<a href="#experience"> Experience </a>
+				<a href="#skills"> Skills </a>
+				<a href="#my_game_shows"> My Game Shows </a>
+				<a href="#more_ive_built"> What I've Built </a>
+				<a href="#contact"> Contact </a>
 			</div>
-			<button id="contact_button"> <a href="mailto:thealexcarron@gmail.com">Contact Me</a> </button>
+			<button id="contact_button"> <a href="mailto:thealexcarron@gmail.com"> Email Me </a> </button>
 		</nav>
 
 
-		<!-- ^ HEADER -->
+		<!-- HEADER -->
 		<header id="home">
-			<h1> Alex Carron's Portfolio </h1>
-			<h2> Software Engineer </h2>
+			<h1> Alex Carron </h1>
+			<h2> I'm a full-stack software engineer. I like owning features end to end, keeping code clean, and building tools for the parts of the development workflow that feel tedious. </h2>
 
 			<img src="./images/alex-carron-logo.png" alt="Alex Carron Logo">
 
@@ -58,180 +60,299 @@
 		</header>
 
 
-		<!-- ^ MAIN -->
+		<!-- MAIN -->
 		<main>
 
-			<section id="about_section">
-				<h2> Who Am I? </h2>
-				<div>
-					<p> Hi! I'm Alex, a Software Engineering major at Rochester Institute of Technology, expected to graduate in May 2027. I'm passionate about coding, problem-solving, and building meaningful software. I have experience in full-stack development, collaborating on team projects, and am constantly refining my skills in front-end and back-end development. Check out some of my projects below! </p>
-					<a href="./images/alex-carron-senior-picture.png">
-						<img src="./images/alex-carron-senior-picture.png" alt="Selfie of Myself">
-					</a>
-				</div>
-			</section>
-
-			<section id="skill_section">
-				<h2> Certified In </h2>
-				<div>
-					<a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML">
-						<figure>
-							<figcaption>HTML</figcaption>
-							<img src="./images/html-file-icon.png" alt="HTML File Icon">
-						</figure>
-					</a>
-					<a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS">
-						<figure>
-							<figcaption>CSS</figcaption>
-							<img src="./images/css-file-icon.png" alt="CSS File Icon">
-						</figure>
-					</a>
-					<a href="https://www.javascript.com/">
-						<figure>
-							<figcaption>JavaScript</figcaption>
-							<img src="./images/javascript-file-icon.png" alt="JavaScript File Icon">
-						</figure>
-					</a>
-					<a href="https://www.python.org">
-						<figure>
-							<figcaption>Python</figcaption>
-							<img src="./images/python-file-icon.png" alt="Python File Icon">
-						</figure>
-					</a>
-					<a href="https://www.java.com/">
-						<figure>
-							<figcaption>Java</figcaption>
-							<img src="./images/java-file-icon.png" alt="Java File Icon">
-						</figure>
-					</a>
-				</div>
-			</section>
-
-			<section id="other_skills_section">
-				<h2> Other Skills & Technologies </h2>
-				<div class="skills_container">
-						<ul>
-								<li>Git & GitHub</li>
-								<li>Agile Methodologies (Scrum, OpenUP)</li>
-								<li>Project Management (Trello, Slack)</li>
-								<li>Software Documentation (UML, Sequence Diagrams)</li>
-								<li>Unit Testing (JUnit, Mockito, Jest)</li>
-								<li>Code Quality (JaCoCo, SonarQube)</li>
-								<li>Database Management (PostgreSQL)</li>
-								<li>Static Code Analysis</li>
-								<li>RESTful API Development</li>
-						</ul>
-				</div>
-		</section>
-
-			<section id="projects_section">
-				<h2> My Projects </h2>
-					<div class="projects_container">
-						<div class="project_container">
-							<img src="./images/regenerative-therapies-screenshot.png" alt="Screenshot of Schedule Website">
-							<div class="project_info_container">
-								<h3> Regenerative Therapies </h3>
-								<p> A website I created for a St. Louis Tai Chi Gung business to help inform and guide users to pay for a class. </p>
-								<button><a href="https://regenerativetherapies.org">Go To Website</a></button>
-							</div>
-						</div>
-						<div class="project_container">
-							<img src="./images/rock-estore-logo.jpg" alt="Rock E-Store Logo">
-							<div class="project_info_container">
-								<h3> Rock E-Store </h3>
-								<p> A web app made for buying rocks online and managing the purchases and stock of rocks all within the website. Created with a team of 5 developers and built in Java 11=> Spring Boot and Angular 17. </p>
-								<button><a href="https://github.com/alexcarron/rock-estore">Go To Repository</a></button>
-							</div>
-						</div>
-						<div class="project_container">
-							<img src="./images/recreational-activity-generator-icon.png" alt="Recreational Activity Generator Screenshot">
-							<div class="project_info_container">
-								<h3> Personal Recreational Activity Generator </h3>
-								<p> An web app for creating recreational activities and searching or generating one to do based on your available time, items, focus, and wanted productivity. </p>
-								<button><a href="https://github.com/alexcarron/recreational-activity-generator">Go To Repository</a></button>
-							</div>
-						</div>
-						<div class="project_container">
-							<img src="./images/flow-focus-icon.png" alt="Screenshot of Flow Focus">
-							<div class="project_info_container">
-								<h3> Flow Focus </h3>
-								<p> A personal task management web application used to determine which task you should be prioritizing and focusing on. Built in Angular. Currently in progress </p>
-								<button><a href="https://github.com/alexcarron/flowfocus">Go To Repository</a></button>
-							</div>
-						</div>
-						<div class="project_container">
-							<img src="./images/music-player-icon.png" alt="Screenshot of Music Player App">
-							<div class="project_info_container">
-								<h3> Mood-based Music Player </h3>
-								<p> A custom music player application which will allow you to assign moods to songs and use that to generate playlist based on the mood you want. Building with Angular and Electron </p>
-								<button><a href="https://github.com/alexcarron/music-player">Go To Repository</a></button>
-							</div>
-						</div>
-						<div class="project_container">
-							<img src="./images/brobot-proj-screenshot.png" alt="Screenshot of Discord Bot Code">
-							<div class="project_info_container">
-								<h3> BroBot the Discord Bot </h3>
-								<p> An automated program that lets people run commands on the instant messaging social platform, Discord. Helps contestants participate in my online game shows. Constantly being updated since Jan 2021 </p>
-								<button><a href="https://github.com/alexcarron/brobot">Go To Repository</a></button>
-							</div>
-						</div>
-						<div class="project_container">
-							<img src="./images/portfolio-proj-screenshot.png" alt="Screenshot of Portfolio Website">
-							<div class="project_info_container">
-								<h3> Portfolio </h3>
-								<p> A website that showcases my projects and other examples of my work. </p>
-								<button><a href="https://github.com/alexcarron/portfolio"> Go To Website </a></button>
-							</div>
-						</div>
-						<div class="project_container">
-							<img src="./images/schedule-proj-screenshot.png" alt="Screenshot of Schedule Website">
-							<div class="project_info_container">
-								<h3> Schedule Timer </h3>
-								<p> A website that tells you how much time is left for the current class period. </p>
-								<button><a href="https://github.com/alexcarron/schedule">Go To Repository</a></button>
-							</div>
-						</div>
-						<div class="project_container">
-							<img src="./images/traffic-simulator-screenshot.png" alt="Screenshot of Schedule Website">
-							<div class="project_info_container">
-								<h3> Traffic Simulator Game </h3>
-								<p> A simple web game using HTML, CSS, and JavaScript where players avoid traffic. Created during my Web & Computer Programming class at South Technical High School. </p>
-								<button><a href="https://github.com/alexcarron/traffic_simulator">Go To Repository</a></button>
-							</div>
-						</div>
+			<!-- WHO I AM -->
+			<section id="who_i_am">
+				<h2> Who I Am </h2>
+				<div class="who_i_am_content">
+					<div class="who_i_am_text">
+						<p> Hi, I'm Alex. I'm a software engineering student at RIT in my last year, and I just finished a year as a full-stack co-op. What I like about software is that it's certain. You write something and you know exactly what you'll get back without any ambiguity. </p>
+						<p> I'm pretty introverted and on the quiet side, and I care a lot about the small stuff, how code is structured and whether the next person can actually find their way around it. When something in my own day or developer workflow feels tedious or repetitive, my first instinct is to build a tool for it, and a lot of my projects started that way. </p>
+						<p> Outside of work and school, I'm usually working on one of my own coding projects (Namesmith, Activity Wheel, Flow Focus, my Tune Tournament generator) or hanging out and playing games with online friends (whatever we're into that week). I enjoy listening to music and my taste is all over the place (EDM, future bass, J-pop, technical rap, etc.). My favorite way to relax is a quiet walk at night. Before all that, I ran a YouTube channel called "LL Game Shows!", where I hosted game shows for my Discord community and wrote, recorded, and edited every video myself. </p>
 					</div>
+					<a href="./images/alex-carron-senior-picture.png">
+						<img src="./images/alex-carron-senior-picture.png" alt="Photo of Alex Carron">
+					</a>
+				</div>
+
+				<ul class="at_a_glance">
+					<li> <strong>RIT</strong> - B.S. Software Engineering </li>
+					<li> <strong>3.99</strong> GPA </li>
+					<li> Graduating <strong>May 2027</strong> </li>
+					<li> <strong>1 year</strong> co-op at Solü, contracted with Paychex </li>
+					<li> Open to full-time roles for 2027 </li>
+				</ul>
 			</section>
 
-			<!--
-			<section id="contact_section">
-				<h2> Get In Touch </h2>
-				<form action="./scripts/email.form.php" method="post" name="email_form">
-					<input type="text" name="username" id="username_input" placeholder="Name">
-					<input type="email" name="email" id="email_input" placeholder="Email">
-					<textarea name="message" id="message_input" placeholder="Message" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+			<!-- EXPERIENCE -->
+			<section id="experience">
+				<h2> Experience </h2>
 
-					<button type="submit"> Send Message </button>
-				</form>
+				<div class="experience_entry">
+					<h3> Software Engineer Co-op, Solü Technology Partners </h3>
+					<p class="experience_meta"> Remote, May 2025 to May 2026, on Paychex's payroll platform </p>
+					<p> I spent about a year as a co-op on Paychex's large enterprise payroll platform, and it's where a few things clicked for me. I got to work across the whole stack (React, Angular, TypeScript, Java, Spring Boot, MongoDB, and Oracle), though most stories split dev and test work between two different people and I was assigned one side or the other. One time I did get to take a feature through most of the stack myself on the dev side, just not the QA automation, and that's the kind of work I really enjoyed doing. </p>
+					<ul class="experience_highlights">
+						<li> I chased down a defect where a middle initial was getting saved as the literal word "null", following it from the Mongo document back through the Kafka publisher until I found the exact line turning a null into a string, then wrote up the cause for the team that owned that code. </li>
+						<li> I fixed a batch of flaky UI tests after realizing some elements were hiding by shrinking to zero width and height, and made test teardown survive a mid-scenario failure so one bad scenario stopped taking the whole run down with it. </li>
+						<li> I took over our automation review generator and added per-environment pass rates from Metabase and support for multiple project configs. Other teams started using it, so I reworked the error messages and README around what they actually ran into. </li>
+						<li> This is where I really got into AI tooling. I built skills and agents for the things I did every day (drafting test scenarios, writing Gauge step implementations, git helpers, a pre-commit review agent), shared them in the company AI repo, and demoed them to my team and a company-wide AI group. </li>
+						<li> And I wrote wiki pages for everything I got stuck on, because the existing docs were often out of date or did not exist and I didn't want anyone else to get lost. </li>
+					</ul>
+				</div>
+
+				<div class="experience_entry">
+					<h3> B.S. Software Engineering, Rochester Institute of Technology </h3>
+					<p class="experience_meta"> Graduating May 2027, GPA 3.99 </p>
+					<p> Alongside classes I've worked as a tutor and course assistant for the intro software development courses, sitting with students and walking through whatever they were stuck on, whether that was a specific bug or a concept that hadn't clicked yet. </p>
+				</div>
 			</section>
-			-->
+
+			<!-- SKILLS -->
+			<section id="skills">
+				<h2> Skills </h2>
+				<p> The tools and technologies I've worked with. </p>
+
+				<div class="skill_groups">
+					<div class="skill_group">
+						<h3> Languages </h3>
+						<ul>
+							<li> TypeScript </li>
+							<li> JavaScript </li>
+							<li> Java </li>
+							<li> Python </li>
+							<li> SQL </li>
+							<li> C / C++ / C# </li>
+						</ul>
+					</div>
+					<div class="skill_group">
+						<h3> Front End </h3>
+						<ul>
+							<li> React </li>
+							<li> Angular </li>
+							<li> HTML &amp; CSS </li>
+						</ul>
+					</div>
+					<div class="skill_group">
+						<h3> Back End </h3>
+						<ul>
+							<li> Node.js </li>
+							<li> Spring Boot </li>
+							<li> REST APIs </li>
+						</ul>
+					</div>
+					<div class="skill_group">
+						<h3> Databases </h3>
+						<ul>
+							<li> PostgreSQL </li>
+							<li> MongoDB </li>
+							<li> Oracle </li>
+							<li> SQLite </li>
+							<li> MySQL </li>
+							<li> IndexedDB </li>
+						</ul>
+					</div>
+					<div class="skill_group">
+						<h3> Cloud &amp; Infrastructure </h3>
+						<ul>
+							<li> AWS (Amplify, Lambda, API Gateway, S3, RDS, Rekognition, CloudWatch) </li>
+							<li> Terraform </li>
+						</ul>
+					</div>
+					<div class="skill_group">
+						<h3> Testing &amp; Tooling </h3>
+						<ul>
+							<li> Jest, JUnit, Mockito </li>
+							<li> Gauge, Selenium </li>
+							<li> Postman, Splunk, Jenkins </li>
+							<li> Jira, Confluence </li>
+						</ul>
+					</div>
+					<div class="skill_group">
+						<h3> AI Tooling </h3>
+						<ul>
+							<li> Building custom Copilot AI skills, agents, and workflows </li>
+							<li> Claude Code in the CLI </li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="skillsusa">
+					<h3> SkillsUSA </h3>
+					<p> Back in high school I had a great time competing in SkillsUSA. My partner and I took first place in the State Web Design &amp; Development competition, advanced to Nationals in Atlanta, and placed third there representing Missouri. I also placed second in the District Computer Programming competition, advanced to State, then to Nationals, and placed third there as well representing Missouri. </p>
+				</div>
+			</section>
+
+			<!-- MY GAME SHOWS -->
+			<section id="my_game_shows">
+				<h2> My Game Shows </h2>
+
+				<div class="my_game_shows_text">
+					<p> Before I got as deep into software as I am now, I ran a YouTube channel called <strong>LL Game Shows</strong>. The main idea of the channel was "bringing the fun of TV game shows online so anyone could play". You could just hop into the Discord server, and you were a contestant. </p>
+					<p> It grew into something I'm proud of with over 10,000 subscribers, 400+ videos, and a lot of content that did really well. My Undertale and Deltarune music quizzes have hundreds of thousands to over a million views, and my most popular video, <em>"All the Undertale Songs Are Connected (REMASTERED)"</em>, is past four million views with people still watching. My favorite show to make was <em> SAND </em>, a Survivor-style game played entirely over Discord that ran three full seasons (only the first two made it into videos). I also created game show formats like STeller (a story-writing competition), Item Feud, Battle of Hearts, murder mysteries, and noob-versus-speedrunner races. </p>
+					<p> I don't actively run game shows anymore, but the channel is still up, and I'm very proud of it creatively. It's where I first learned to write, record, and edit videos end to end. </p>
+				</div>
+
+				<div class="game_show_gallery">
+					<img src="./images/ll-game-shows-banner.png" alt="LL Game Shows channel banner">
+				</div>
+
+				<div class="tune_tournament">
+					<h3> Tune Tournament </h3>
+					<div class="tune_tournament_text">
+						<p> What I still make is <strong>Tune Tournament</strong> shorts, a music-rating series where two songs go head to head and viewers vote on which one sounds better. It's 66 videos deep now, and the thing I'm proudest of is that I don't edit them by hand. I built a generator for it. </p>
+						<p> It's an idea I had for a while to use code to create YouTube videos. Two raw audio files are inputted, and one finished vertical video comes out. Behind the scenes, it finds the structural sections of each song straight from the raw audio signal, snaps every cut to the beat, picks the most distinct-sounding parts, and loudness-normalizes both songs to the same level. Then, a second stage composites the whole vertical video (tinted from each song's cover art, animated, and captioned) frame by frame. </p>
+					</div>
+					<div class="tune_tournament_thumbnails">
+						<a href="https://youtube.com/shorts/bp4u94gmS5s">
+							<img src="./images/tune-tournament-vertical-thumbnail-another-medium-vs-core.png" alt="Thumbnail from Tune Tournament video: Another Medium VS Core">
+						</a>
+						<a href="https://youtube.com/shorts/uK2criuUGSk">
+							<img src="./images/tune-tournament-vertical-thumbnail-big-shot-vs-megalovania.png" alt="Thumbnail from Tune Tournament video: Big Shot VS Megalovania">
+						</a>
+						<a href="https://youtube.com/shorts/d3CLev_U1QY">
+							<img src="./images/tune-tournament-vertical-thumbnail-sunroof-vs-sunday-best.png" alt="Thumbnail from Tune Tournament video: Sunroof VS Sunday Best">
+						</a>
+					</div>
+					<div class="game_show_links">
+						<button> <a href="https://www.youtube.com/@LLGameShows/shorts"> Watch on YouTube </a> </button>
+						<button> <a href="https://www.youtube.com/playlist?list=PL9zSFOlSl63X8sDLHt-FCXcUE6IMgixPO"> Tune Tournament Playlist </a> </button>
+						<button> <a href="https://www.youtube.com/watch?v=09gOim5j1jQ"> Watch SAND Season 2: THE MOVIE </a> </button>
+						<button> <a href="https://discord.gg/tVAVqCBVcR"> Join the Game Show Discord </a> </button>
+					</div>
+				</div>
+
+				<div class="game_show_bot">
+					<h3> Brobot (Discord Bot) </h3>
+					<p> Many of my Discord game shows and my Discord community ran on <strong>Brobot</strong>, a Discord bot I've been building since 2021 to handle game flow, points, leaderboards, and everything else my servers and my game shows need. It has grown into something much bigger since. I talk about that more in the projects below. </p>
+				</div>
+			</section>
+
+			<!-- WHAT I'VE BUILT -->
+			<section id="more_ive_built">
+				<h2> What I've Built </h2>
+				<p> A few projects I've created, most of them starting because I wanted them to exist just for myself. </p>
+
+				<div class="projects_list">
+
+					<article class="project project_featured">
+						<img src="./images/namesmith-logo.png" alt="Namesmith's logo">
+						<div class="project_details">
+							<h3> Namesmith &amp; Brobot </h3>
+							<p class="project_stack"> TypeScript, Node.js, Discord.js, SQLite </p>
+							<p> Namesmith is the project I'm actively working on, and it's built on top of Brobot, the Discord bot. It's a competitive game where players collect characters to craft a username, with mystery boxes, trading, crafting, quests, perks, and ranked-choice voting. I wrote the whole thing in TypeScript with a real CI pipeline (lint, then typecheck, then tests on every push) and kept refactoring whenever the design started slowing me down. </p>
+							<p> Brobot itself has turned into something I'm proud of despite the years of coding leaving it a little messy. It has 400+ source files and several games/services living in it. A few fun decisions I made with this project were having a typed event system to avoid game logic reaching directly into Discord, scaffolding scripts that generate a new service and repository for me, and, to skip paying for hosting at the start, using a private GitHub repo as a JSON database through the GitHub API. </p>
+							<div class="project_links">
+								<button> <a href="https://github.com/alexcarron/brobot"> View Brobot on GitHub </a> </button>
+							</div>
+						</div>
+					</article>
+
+					<article class="project project_featured">
+						<img src="./images/activity-wheel-wheel-component.png" alt="Screenshot of the Activity Wheel app">
+						<div class="project_details">
+							<h3> Activity Wheel </h3>
+							<p class="project_stack"> React, TypeScript, Vite, IndexedDB, Supabase </p>
+							<p> I built a spin-the-wheel activity decider that learns what activities you actually enjoy. You spin it, it picks something foryou to do, and you provide feedback (love it, skip it, hate it), and over time your reactions shift the weights so its picks match you better, without you typing in a number. It uses a weight system designed so that nothing ever gets fully buried and nothing gets permanently favored. Originally I built it just for my own use. </p>
+							<p> It works fully offline in your browser by default and never makes a network call unless you sign in with Google, which moves your data to a private, row-level-secured PostgreSQL database via Supabase. </p>
+							<div class="project_links">
+								<button> <a href="https://alexcarron.github.io/activity-wheel/"> Try It Live </a> </button>
+								<button> <a href="https://github.com/alexcarron/activity-wheel"> View on GitHub </a> </button>
+							</div>
+						</div>
+					</article>
+
+					<article class="project project_featured">
+						<img src="./images/flow-focus-task-screenshot.png" alt="Screenshot of Flow Focus morning routine task">
+						<div class="project_details">
+							<h3> Flow Focus </h3>
+							<p class="project_stack"> React, TypeScript, Zustand, IndexedDB </p>
+							<p> I got tired of all the task apps I tried and failed tracking things by hand, so I built Flow Focus to only show you one task at a time, the single most important thing right now, and that's it. I mainly used it for myself when I had a ton of competing things to do with different priorities. </p>
+							<p> To pick what to show, it sorts every task by how much "slack time" each one has (how long you can safely put it off before it becomes impossible to finish on time), and subtracts the hours you'll be asleep from that math. I liked turning a vague idea like "just tell me what to do" into a real web app I actually could use and benefit from. </p>
+							<div class="project_links">
+								<button> <a href="https://github.com/alexcarron/flow-focus"> View on GitHub </a> </button>
+							</div>
+						</div>
+					</article>
+
+				</div>
+
+				<h3> More Projects </h3>
+
+				<div class="projects_secondary">
+
+					<article class="project_card">
+						<h3> The Numbers Game </h3>
+						<p class="project_stack"> TypeScript, Discord.js </p>
+						<p> I made a turn-based party game for Discord voice calls, all driven by buttons, dropdowns, and popups instead of typed commands. The lobby auto-fills with whoever is in your voice channel. I paid a lot of attention to small details like a stable numbering system so the question numbers you see never shift mid-game, and making sure only the person whose turn it is can act. </p>
+						<div class="project_links">
+							<button> <a href="https://github.com/alexcarron/the-numbers-game-bot"> View on GitHub </a> </button>
+						</div>
+					</article>
+
+					<article class="project_card">
+						<h3> Where's Waldo (AWS Infrastructure) </h3>
+						<p class="project_stack"> Terraform, AWS (Rekognition, Lambda, API Gateway, S3, Amplify) </p>
+						<p> My team and I built a face-finding game for a cloud course, and the part I owned was the infrastructure. The entire AWS backend is defined in Terraform, so one command sets the whole thing up and another command takes it all down. It's the best example I have of me working well beyond the front end. </p>
+						<div class="project_links">
+							<button> <a href="https://github.com/514-2245-2-team-6/terraform-infastructure"> View on GitHub </a> </button>
+						</div>
+					</article>
+
+					<article class="project_card">
+						<h3> Chat Server </h3>
+						<p class="project_stack"> Python, Flask, PostgreSQL </p>
+						<p> I built a backend for a chat app (users, communities, channels, messages, and auth) with a properly designed REST API and database schema. I drew out the endpoint map and the entity-relationship diagram before building it. </p>
+						<div class="project_links">
+							<button> <a href="https://github.com/alexcarron/chat-server"> View on GitHub </a> </button>
+						</div>
+					</article>
+				</div>
+
+				<div class="projects_more">
+					<h3> A few smaller things I've made </h3>
+					<ul class="projects_grid">
+						<li> <strong>Watchlist</strong> A React app for keeping track of media you've watched. <a href="https://alexcarron.github.io/watchlist/"> Go to Live Site </a> </li>
+						<li> <strong>Vibrant Daydream</strong> A bright, playful VS Code color theme I use personally. <a href="https://github.com/alexcarron/vibrant-daydream"> View on GitHub </a> </li>
+						<li> <strong>Heading Level Indenter</strong> A small Obsidian plugin to indent headings based on their level. <a href="https://github.com/alexcarron/heading-level-indenter-plugin"> View on GitHub </a> </li>
+					</ul>
+					<p> <a href="https://github.com/alexcarron"> See all of my repositories on GitHub </a> </p>
+				</div>
+			</section>
+
+			<!-- CONTACT -->
+			<section id="contact">
+				<h2> Contact Me </h2>
+				<p> I'm looking for full-stack software engineering roles for 2027, and I'm always happy to hear from people. The best way to reach me is email. </p>
+				<ul class="contact_links">
+					<li> <strong>Email</strong> <a href="mailto:thealexcarron@gmail.com"> thealexcarron@gmail.com </a> </li>
+					<li> <strong>LinkedIn</strong> <a href="https://linkedin.com/in/alexcarron"> @alexcarron </a> </li>
+					<li> <strong>GitHub</strong> <a href="https://github.com/alexcarron"> @alexcarron </a> </li>
+					<li> <strong>Discord</strong> @alexcarron </li>
+				</ul>
+			</section>
 
 		</main>
 
 
-		<!-- ^ FOOTER -->
+		<!-- FOOTER -->
 		<footer>
 			<section>
 				<a href="https://linkedin.com/in/alexcarron"> <img src="./icons/linkedin.svg" alt="LinkedIn"> </a>
 				<a href="https://github.com/alexcarron"> <img src="./icons/github.svg" alt="GitHub"> </a>
 				<a href="mailto:thealexcarron@gmail.com"> <img src="./icons/email.svg" alt="Email"> </a>
-				<a href="https://youtube.com/LLGameShows"> <img src="./icons/youtube.svg" alt="Youtube"> </a>
+				<a href="https://youtube.com/LLGameShows"> <img src="./icons/youtube.svg" alt="YouTube"> </a>
 			</section>
 			<section>
-				<a href="#home">Home</a>
-				<a href="#about_section">About</a>
-				<a href="#skill_section">Certifications</a>
-				<a href="#projects_section">Projects</a>
-				<!-- <a href="#contact_section">Contact</a> -->
+				<a href="#home"> Home </a>
+				<a href="#who_i_am"> Who I Am </a>
+				<a href="#experience"> Experience </a>
+				<a href="#skills"> Skills </a>
+				<a href="#my_game_shows"> My Game Shows </a>
+				<a href="#more_ive_built"> What I've Built </a>
+				<a href="#contact"> Contact </a>
 			</section>
 		</footer>
 	</body>

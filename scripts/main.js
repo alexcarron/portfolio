@@ -1,77 +1,73 @@
-let scrolled = false,
-	isMenuOpen = false;
+const SECTION_IDS = [
+	"home",
+	"who_i_am",
+	"experience",
+	"skills",
+	"my_game_shows",
+	"more_ive_built",
+	"contact"
+];
+const NAV_HEIGHT_OFFSET = 70;
+const MENU_WIDTH = 220;
+
+let scrolled = false;
+let isMenuOpen = false;
 
 function showMenu() {
-	let menu_button = document.querySelector("#menu_button"),
-		nav_links_div = document.querySelector("div#nav_links");
+	let menuButton = document.querySelector("#menu_button");
+	let navLinksDiv = document.querySelector("div#nav_links");
 
 	if (!isMenuOpen) {
-		nav_links_div.style.left = 0;
-		menu_button.style.transform = "translateX(162px)";
+		navLinksDiv.style.left = "0px";
+		menuButton.style.transform = `translateX(${MENU_WIDTH}px)`;
 		isMenuOpen = true;
-	} else {
-		nav_links_div.style.left = "-162px";
-		menu_button.style.transform = "translateX(0px)";
+	}
+	else {
+		navLinksDiv.style.left = `-${MENU_WIDTH + 25}px`;
+		menuButton.style.transform = "translateX(0px)";
 		isMenuOpen = false;
 	}
 }
 
-function highlightCurrentSection(scroll_pos) {
-	let about_section = document.querySelector("#about_section"),
-		skill_section = document.querySelector("#skill_section"),
-		projects_section = document.querySelector("#projects_section"),
-		home_link = document.querySelector(`a[href="#home"]`),
-		about_link = document.querySelector(`a[href="#about_section"]`),
-		skills_link = document.querySelector(`a[href="#skill_section"]`),
-		projects_link = document.querySelector(`a[href="#projects_section"]`),
-		about_sect_pos = about_section.offsetTop - 70,
-		skills_sect_pos = skill_section.offsetTop - 70,
-		project_sect_pos = projects_section.offsetTop - 70,
-		highlight_styles = `
-			color: var(--tertiary-color);
-			font-weight: bold;
-		`,
-		normal_styles = `
-			color: var(--main-color);
-			font-weight: normal;
-		`;
+const BOTTOM_OF_PAGE_THRESHOLD = 2;
 
-	switch (true) {
-		case scroll_pos >= project_sect_pos:
-			projects_link.style = highlight_styles
-			home_link.style = normal_styles
-			about_link.style = normal_styles
-			skills_link.style = normal_styles
-			break;
+function highlightCurrentSection(scrollPosition) {
+	let currentSectionId = SECTION_IDS[0];
 
-		case scroll_pos >= skills_sect_pos && scroll_pos <= project_sect_pos:
-			skills_link.style = highlight_styles
-			home_link.style = normal_styles
-			about_link.style = normal_styles
-			projects_link.style = normal_styles
-			break;
+	for (let sectionId of SECTION_IDS) {
+		let section = document.querySelector(`#${sectionId}`);
+		if (!section) {
+			continue;
+		}
 
-		case scroll_pos >= about_sect_pos && scroll_pos <= skills_sect_pos:
-			about_link.style = highlight_styles
-			home_link.style = normal_styles
-			skills_link.style = normal_styles
-			projects_link.style = normal_styles
-			break;
+		let hasScrolledPastSectionTop = scrollPosition >= section.offsetTop - NAV_HEIGHT_OFFSET;
+		if (hasScrolledPastSectionTop) {
+			currentSectionId = sectionId;
+		}
+	}
 
-		default:
-			home_link.style = highlight_styles
-			about_link.style = normal_styles
-			skills_link.style = normal_styles
-			projects_link.style = normal_styles
+	let hasReachedBottomOfPage = scrollPosition + window.innerHeight >= document.body.scrollHeight - BOTTOM_OF_PAGE_THRESHOLD;
+	if (hasReachedBottomOfPage) {
+		currentSectionId = SECTION_IDS[SECTION_IDS.length - 1];
+	}
+
+	for (let sectionId of SECTION_IDS) {
+		let navLink = document.querySelector(`#nav_links a[href="#${sectionId}"]`);
+		if (!navLink) {
+			continue;
+		}
+
+		let isCurrentSection = sectionId === currentSectionId;
+		navLink.classList.toggle("active_link", isCurrentSection);
 	}
 }
 
 window.onscroll = function() {
-  scrolled = true;
+	scrolled = true;
 }
 
 setInterval(
-	function(){
+	function() {
 		if (scrolled) {
 			scrolled = false;
 			highlightCurrentSection(window.pageYOffset);
@@ -79,3 +75,7 @@ setInterval(
 	},
 	150
 );
+
+document.addEventListener("DOMContentLoaded", function() {
+	highlightCurrentSection(window.pageYOffset);
+});
