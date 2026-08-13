@@ -325,6 +325,11 @@ header {
 
 			filter: drop-shadow(2px 4px 8px #00000040);
 		}
+		.experience_entry_text {
+			display: flex;
+			flex-direction: column;
+			gap: var(--margin-small);
+		}
 
 		/* Job Title */
 		#experience .experience_entry h3 {

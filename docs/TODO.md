@@ -1,0 +1,1 @@
+- [ ] Clean up CSS to use less IDs for styling, use more reusable classes, and reduce the specificity of the selectors
