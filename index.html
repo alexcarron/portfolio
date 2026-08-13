@@ -50,7 +50,7 @@
 		<!-- HEADER -->
 		<header id="home">
 			<h1> Alex Carron </h1>
-			<h2> I'm a full-stack software engineer. I like owning features end to end, keeping code clean, and building tools for the parts of the development workflow that feel tedious. </h2>
+			<h2> I'm a full-stack software engineer. I like building tools for the tedious parts of the development workflow, writing readable code that's easy to change later, and owning features end to end. </h2>
 
 			<img src="./images/alex-carron-logo.png" alt="Alex Carron Logo">
 
@@ -68,9 +68,9 @@
 				<h2> Who I Am </h2>
 				<div class="who_i_am_content">
 					<div class="who_i_am_text">
-						<p> Hi, I'm Alex. I'm a software engineering student at RIT in my last year, and I just finished a year as a full-stack co-op. What I like about software is that it's certain. You write something and you know exactly what you'll get back without any ambiguity. </p>
-						<p> I'm pretty introverted and on the quiet side, and I care a lot about the small stuff, how code is structured and whether the next person can actually find their way around it. When something in my own day or developer workflow feels tedious or repetitive, my first instinct is to build a tool for it, and a lot of my projects started that way. </p>
-						<p> Outside of work and school, I'm usually working on one of my own coding projects (Namesmith, Activity Wheel, Flow Focus, my Tune Tournament generator) or hanging out and playing games with online friends (whatever we're into that week). I enjoy listening to music and my taste is all over the place (EDM, future bass, J-pop, technical rap, etc.). My favorite way to relax is a quiet walk at night. Before all that, I ran a YouTube channel called "LL Game Shows!", where I hosted game shows for my Discord community and wrote, recorded, and edited every video myself. </p>
+						<p> Hi, I'm Alex. I'm a software engineering student at RIT in my last year, and I just finished a year as a full-stack co-op. What I like about software is that it's deterministic and feels limitless. You write something and you know exactly what you'll get back without any ambiguity, and I can build pretty much anything I want. I also love turning code that is messy and confusing to something that is easy to understand and change. I love building things and seeing it actually be useful for a real person.</p>
+						<p> I'm pretty introverted and on the quiet side, and I care a lot about the small stuff, how code is structured and whether the next person can actually find their way around it and easily make changes to it. When something in my own day or my workflow feels difficult, tedious, or repetitive, my first instinct is to build a tool for it or redesign a system around it, and a lot of my personal projects start that way. </p>
+						<p> Outside of work and school, I'm usually working on one of my own coding projects (Namesmith, Activity Wheel, Flow Focus, my Tune Tournament generator) or hanging out and playing games with friends. I also enjoy listening to music and my taste is all over the place (EDM, future bass, J-pop, technical rap, etc.). My favorite way to relax is a quiet walk at night. Before, I ran a YouTube channel called "LL Game Shows!", where I hosted game shows for my Discord community and wrote, recorded, and edited every video myself. I still run "game shows" like Namesmith on Discord, but I no longer make YouTube videos. </p>
 					</div>
 					<a href="./images/alex-carron-senior-picture.png">
 						<img src="./images/alex-carron-senior-picture.png" alt="Photo of Alex Carron">
@@ -78,11 +78,12 @@
 				</div>
 
 				<ul class="at_a_glance">
-					<li> <strong>RIT</strong> - B.S. Software Engineering </li>
+					<li> Attending <strong>RIT</strong> </li>
+					<li> B.S. in <strong>Software Engineering</strong> </li>
 					<li> <strong>3.99</strong> GPA </li>
 					<li> Graduating <strong>May 2027</strong> </li>
-					<li> <strong>1 year</strong> co-op at Solü, contracted with Paychex </li>
-					<li> Open to full-time roles for 2027 </li>
+					<li> <strong>1 year</strong> co-op at Solü Technology Partners </li>
+					<li> Open to full-time roles for <strong>2027</strong> </li>
 				</ul>
 			</section>
 
@@ -92,21 +93,23 @@
 
 				<div class="experience_entry">
 					<h3> Software Engineer Co-op, Solü Technology Partners </h3>
-					<p class="experience_meta"> Remote, May 2025 to May 2026, on Paychex's payroll platform </p>
-					<p> I spent about a year as a co-op on Paychex's large enterprise payroll platform, and it's where a few things clicked for me. I got to work across the whole stack (React, Angular, TypeScript, Java, Spring Boot, MongoDB, and Oracle), though most stories split dev and test work between two different people and I was assigned one side or the other. One time I did get to take a feature through most of the stack myself on the dev side, just not the QA automation, and that's the kind of work I really enjoyed doing. </p>
+					<p class="experience_meta"> Remote, May 2025 to May 2026 </p>
+					<p> I spent about a year as a co-op on a large enterprise payroll platform, and a few things clicked for me. I got to work across the whole stack (React, Angular, TypeScript, Java, Spring Boot, MongoDB, and Oracle), though most stories split dev and test work between two different people and I was assigned one side or the other. I enjoyed when I got to take a feature through most of the stack myself through all the different layers. I also loved working on tools and AI skills that actually helped with our software engineering workflow. </p>
 					<ul class="experience_highlights">
-						<li> I chased down a defect where a middle initial was getting saved as the literal word "null", following it from the Mongo document back through the Kafka publisher until I found the exact line turning a null into a string, then wrote up the cause for the team that owned that code. </li>
-						<li> I fixed a batch of flaky UI tests after realizing some elements were hiding by shrinking to zero width and height, and made test teardown survive a mid-scenario failure so one bad scenario stopped taking the whole run down with it. </li>
 						<li> I took over our automation review generator and added per-environment pass rates from Metabase and support for multiple project configs. Other teams started using it, so I reworked the error messages and README around what they actually ran into. </li>
-						<li> This is where I really got into AI tooling. I built skills and agents for the things I did every day (drafting test scenarios, writing Gauge step implementations, git helpers, a pre-commit review agent), shared them in the company AI repo, and demoed them to my team and a company-wide AI group. </li>
-						<li> And I wrote wiki pages for everything I got stuck on, because the existing docs were often out of date or did not exist and I didn't want anyone else to get lost. </li>
+						<li> This is where I really got into AI tooling. I built reusable prompts, skills, and agents for the things I did every day (drafting test scenarios, writing Gauge step implementations, git helpers, a pre-commit review agent). I shared them in the company AI repo and demoed them to my team and a company-wide AI group. </li>
+						<li> I chased down a defect where a middle initial was getting saved as the literal word "null". I followed it from the Mongo document back through the Kafka publisher until I found the exact line turning a null into a string, then wrote up the cause for the team that owned that code. </li>
+						<li> I fixed a set of flaky UI tests after realizing some elements were hiding by shrinking to zero width and height, and made sure test teardowns still ran on a mid-scenario failure so one failing scenario stopped taking down the entire test with it. </li>
+						<li> I built a new endpoint for the payroll status manager remote. I wrote the controller and service in Spring Boot, wired it up to the microservice, wrote the unit tests, and got it deployed, then generated the wiki page and Swagger link for it myself. </li>
+						<li> And I wrote many wiki pages for everything I got stuck on, because the existing docs were often out of date or did not exist and I didn't want anyone else to get lost. </li>
 					</ul>
 				</div>
 
 				<div class="experience_entry">
 					<h3> B.S. Software Engineering, Rochester Institute of Technology </h3>
 					<p class="experience_meta"> Graduating May 2027, GPA 3.99 </p>
-					<p> Alongside classes I've worked as a tutor and course assistant for the intro software development courses, sitting with students and walking through whatever they were stuck on, whether that was a specific bug or a concept that hadn't clicked yet. </p>
+					<p> My coursework covered pretty much the whole lifecycle of building software. Early on in the intro courses it was object-oriented programming, data structures, and test driven development. Then, it moved into design patterns, refactoring, and full-stack web development with REST APIs and databases which I was really excited by. I also got to do requirements gathering and UI/UX prototyping with Human-Centered Requirements and Design. I worked with embedded systems, wiring up microcontrollers and messing with GPIO and hardware registers in my Embedded Systems course. I also took a course on cloud systems like AWS and containers, and a project management class that actually taught me software engineering proceess and ways to plan and estimate work. Coming up I've got my two semester software engineering capstone project, a course on software architecture and requirements, a security-focused engineering course, and analysis of algorithms, I'm also taking some higher-level math like linear algebra and multivariable calculus along with lighter math courses that I think I'll have fun with for my math immersion. </p>
+					<p> Alongside software engineering courses I've worked as a tutor and course assistant for the intro software development courses, sitting with students and walking through whatever they were stuck on, whether that was a specific bug or a concept that hadn't clicked yet. </p>
 				</div>
 			</section>
 
@@ -124,7 +127,7 @@
 							<li> Java </li>
 							<li> Python </li>
 							<li> SQL </li>
-							<li> C / C++ / C# </li>
+							<li> C, C++, C# </li>
 						</ul>
 					</div>
 					<div class="skill_group">
@@ -157,7 +160,7 @@
 					<div class="skill_group">
 						<h3> Cloud &amp; Infrastructure </h3>
 						<ul>
-							<li> AWS (Amplify, Lambda, API Gateway, S3, RDS, Rekognition, CloudWatch) </li>
+							<li> AWS (Amplify, Lambda, API Gateway, S3, RDS, Rekognition) </li>
 							<li> Terraform </li>
 						</ul>
 					</div>
@@ -173,7 +176,7 @@
 					<div class="skill_group">
 						<h3> AI Tooling </h3>
 						<ul>
-							<li> Building custom Copilot AI skills, agents, and workflows </li>
+							<li> Building custom Copilot AI prompts, skills, and agents </li>
 							<li> Claude Code in the CLI </li>
 						</ul>
 					</div>
@@ -181,7 +184,7 @@
 
 				<div class="skillsusa">
 					<h3> SkillsUSA </h3>
-					<p> Back in high school I had a great time competing in SkillsUSA. My partner and I took first place in the State Web Design &amp; Development competition, advanced to Nationals in Atlanta, and placed third there representing Missouri. I also placed second in the District Computer Programming competition, advanced to State, then to Nationals, and placed third there as well representing Missouri. </p>
+					<p> Back in high school I had a great time competing in SkillsUSA. My partner and I got first place in the State Web Design &amp; Development competition, advanced to Nationals in Atlanta, and placed third there representing Missouri. I also placed second in the District Computer Programming competition, advanced to State, then to Nationals, and placed third there as well representing Missouri. </p>
 				</div>
 			</section>
 
@@ -190,20 +193,22 @@
 				<h2> My Game Shows </h2>
 
 				<div class="my_game_shows_text">
-					<p> Before I got as deep into software as I am now, I ran a YouTube channel called <strong>LL Game Shows</strong>. The main idea of the channel was "bringing the fun of TV game shows online so anyone could play". You could just hop into the Discord server, and you were a contestant. </p>
-					<p> It grew into something I'm proud of with over 10,000 subscribers, 400+ videos, and a lot of content that did really well. My Undertale and Deltarune music quizzes have hundreds of thousands to over a million views, and my most popular video, <em>"All the Undertale Songs Are Connected (REMASTERED)"</em>, is past four million views with people still watching. My favorite show to make was <em> SAND </em>, a Survivor-style game played entirely over Discord that ran three full seasons (only the first two made it into videos). I also created game show formats like STeller (a story-writing competition), Item Feud, Battle of Hearts, murder mysteries, and noob-versus-speedrunner races. </p>
+					<p> Before now, I ran a YouTube channel called <strong><a href="https://youtube.com/LLGameShows">LL Game Shows</a></strong>. The main idea of the channel was "bringing the fun of TV game shows online so anyone could play". You could just hop into the Discord server, and you were a contestant. </p>
+					<p> It grew into something I'm proud of with over 10,000 subscribers, 400+ videos, and a lot of content that did really well. My <a href="https://youtu.be/8pbDrkNgM3A">Undertale</a> and <a href="https://youtu.be/LYmxmfn89sE">Deltarune music quizzes</a> have hundreds of thousands to over a million views, and my most popular video, <em><a href="https://youtu.be/YQuDid8oPTI">"All the Undertale Songs Are Connected (REMASTERED)"</a></em>, is past four million views with people still watching. My favorite show to make was <em><a href="https://www.youtube.com/show/VLPLAjmmRQV90iI?sbp=KgtfMGEtN0tHcW1VY0AB">SAND</a></em>, a Survivor-style game played entirely over Discord that ran three full seasons (only the first two made it into videos). I also created game show formats like <a href="https://www.youtube.com/show/VLPLfrT4vPSdiPQ?sbp=KgstT3FITzdScGNPa0AB">STeller</a> (a story-writing competition), <a href="https://www.youtube.com/show/VLPLfY6VMZEMbMI?sbp=KgtmT3E5QjNkTW9ZUUAB">Item Feud</a>, <a href="https://www.youtube.com/playlist?list=PL9zSFOlSl63VDv-Z5ef2Ff2cGhWS-lzY-">Battle of Hearts</a>, <a href="https://youtu.be/EokYqggGIRs">murder mysteries</a>, and <a href="https://www.youtube.com/playlist?list=PL9zSFOlSl63WZyFL87Y_wI9p4qmbjaQKY">noob-versus-speedrunner races</a>. </p>
 					<p> I don't actively run game shows anymore, but the channel is still up, and I'm very proud of it creatively. It's where I first learned to write, record, and edit videos end to end. </p>
 				</div>
 
 				<div class="game_show_gallery">
-					<img src="./images/ll-game-shows-banner.png" alt="LL Game Shows channel banner">
+					<a href="https://youtube.com/LLGameShows">
+						<img src="./images/ll-game-shows-banner.png" alt="LL Game Shows channel banner">
+					</a>
 				</div>
 
 				<div class="tune_tournament">
 					<h3> Tune Tournament </h3>
 					<div class="tune_tournament_text">
-						<p> What I still make is <strong>Tune Tournament</strong> shorts, a music-rating series where two songs go head to head and viewers vote on which one sounds better. It's 66 videos deep now, and the thing I'm proudest of is that I don't edit them by hand. I built a generator for it. </p>
-						<p> It's an idea I had for a while to use code to create YouTube videos. Two raw audio files are inputted, and one finished vertical video comes out. Behind the scenes, it finds the structural sections of each song straight from the raw audio signal, snaps every cut to the beat, picks the most distinct-sounding parts, and loudness-normalizes both songs to the same level. Then, a second stage composites the whole vertical video (tinted from each song's cover art, animated, and captioned) frame by frame. </p>
+						<p> What I still make is <strong><a href="https://www.youtube.com/playlist?list=PL9zSFOlSl63X8sDLHt-FCXcUE6IMgixPO">Tune Tournament</a></strong> shorts, a music-rating series where two songs go head to head and viewers vote on which one sounds better. There's 66 videos now, and the thing I'm proudest of is that I don't edit them by hand. I built a generator for it. </p>
+						<p> It's an idea I had for a while to use code to create YouTube videos. Two raw audio files are inputted, and one finished vertical video comes out. Behind the scenes, it finds the structural sections of each song straight from the raw audio signal, picks the most distinct sounding segments, snaps to the downbeat, arranges the audio clips together, and normalizes the loudness of both songs to the same level. Then, a second stage composites the entire whole vertical video, rendering text with shadow, rendering a looping background, tinting the background from each song's cover art, and animating the elements with ease-in-out frame by frame. </p>
 					</div>
 					<div class="tune_tournament_thumbnails">
 						<a href="https://youtube.com/shorts/bp4u94gmS5s">
@@ -217,8 +222,8 @@
 						</a>
 					</div>
 					<div class="game_show_links">
-						<button> <a href="https://www.youtube.com/@LLGameShows/shorts"> Watch on YouTube </a> </button>
-						<button> <a href="https://www.youtube.com/playlist?list=PL9zSFOlSl63X8sDLHt-FCXcUE6IMgixPO"> Tune Tournament Playlist </a> </button>
+						<button> <a href="https://www.youtube.com/LLGameShows"> See my YouTube Channel </a> </button>
+						<button> <a href="https://www.youtube.com/playlist?list=PL9zSFOlSl63X8sDLHt-FCXcUE6IMgixPO"> Watch the Tune Tournament Playlist </a> </button>
 						<button> <a href="https://www.youtube.com/watch?v=09gOim5j1jQ"> Watch SAND Season 2: THE MOVIE </a> </button>
 						<button> <a href="https://discord.gg/tVAVqCBVcR"> Join the Game Show Discord </a> </button>
 					</div>
@@ -226,7 +231,7 @@
 
 				<div class="game_show_bot">
 					<h3> Brobot (Discord Bot) </h3>
-					<p> Many of my Discord game shows and my Discord community ran on <strong>Brobot</strong>, a Discord bot I've been building since 2021 to handle game flow, points, leaderboards, and everything else my servers and my game shows need. It has grown into something much bigger since. I talk about that more in the projects below. </p>
+					<p> Many of my Discord game shows and my Discord community ran on <strong><a href="https://github.com/alexcarron/brobot">Brobot</a></strong>, a Discord bot I've been building since 2021 to handle game flow, points, leaderboards, and everything else my servers and my game shows need. It has grown into something much bigger since. I talk about that more in the projects below. </p>
 				</div>
 			</section>
 
@@ -242,8 +247,8 @@
 						<div class="project_details">
 							<h3> Namesmith &amp; Brobot </h3>
 							<p class="project_stack"> TypeScript, Node.js, Discord.js, SQLite </p>
-							<p> Namesmith is the project I'm actively working on, and it's built on top of Brobot, the Discord bot. It's a competitive game where players collect characters to craft a username, with mystery boxes, trading, crafting, quests, perks, and ranked-choice voting. I wrote the whole thing in TypeScript with a real CI pipeline (lint, then typecheck, then tests on every push) and kept refactoring whenever the design started slowing me down. </p>
-							<p> Brobot itself has turned into something I'm proud of despite the years of coding leaving it a little messy. It has 400+ source files and several games/services living in it. A few fun decisions I made with this project were having a typed event system to avoid game logic reaching directly into Discord, scaffolding scripts that generate a new service and repository for me, and, to skip paying for hosting at the start, using a private GitHub repo as a JSON database through the GitHub API. </p>
+							<p> Namesmith is the project I'm actively working on, and it's built on top of Brobot, the Discord bot. It's a competitive game where players collect characters to craft a username, with mystery boxes, trading, crafting, quests, perks, and voting. I wrote the whole thing in TypeScript with a real CI pipeline (lint, then typecheck, then unit tests on every commit) and always refactored the codebase whenever the design started slowing me down. </p>
+							<p> Brobot itself has turned into something I'm proud of despite the years of coding leaving it a little messy. It has 400+ source files and several games and services living in it. A few fun decisions I made with this project were having a typed event system to avoid game logic reaching directly into Discord, building scripts that scaffold a new service and repository for me, and, to skip paying for hosting at the start, using a private GitHub repo as a JSON database through the GitHub API. </p>
 							<div class="project_links">
 								<button> <a href="https://github.com/alexcarron/brobot"> View Brobot on GitHub </a> </button>
 							</div>
@@ -251,11 +256,11 @@
 					</article>
 
 					<article class="project project_featured">
-						<img src="./images/activity-wheel-wheel-component.png" alt="Screenshot of the Activity Wheel app">
+						<img src="./images/the-activity-wheel.png" alt="Screenshot of the Activity Wheel app">
 						<div class="project_details">
 							<h3> Activity Wheel </h3>
 							<p class="project_stack"> React, TypeScript, Vite, IndexedDB, Supabase </p>
-							<p> I built a spin-the-wheel activity decider that learns what activities you actually enjoy. You spin it, it picks something foryou to do, and you provide feedback (love it, skip it, hate it), and over time your reactions shift the weights so its picks match you better, without you typing in a number. It uses a weight system designed so that nothing ever gets fully buried and nothing gets permanently favored. Originally I built it just for my own use. </p>
+							<p> I built a spin-the-wheel activity decider that learns what activities you actually enjoy. You spin it, it picks something for you to do, and you provide feedback (love it, accept, skip it, reject, hate it). Over time your reactions shift the weights so the activities the wheel picks match your preferences better, without you having to type in any numbers. Originally I built it just for my own use, but I decided to make it public to use with friends as well. </p>
 							<p> It works fully offline in your browser by default and never makes a network call unless you sign in with Google, which moves your data to a private, row-level-secured PostgreSQL database via Supabase. </p>
 							<div class="project_links">
 								<button> <a href="https://alexcarron.github.io/activity-wheel/"> Try It Live </a> </button>
@@ -269,8 +274,8 @@
 						<div class="project_details">
 							<h3> Flow Focus </h3>
 							<p class="project_stack"> React, TypeScript, Zustand, IndexedDB </p>
-							<p> I got tired of all the task apps I tried and failed tracking things by hand, so I built Flow Focus to only show you one task at a time, the single most important thing right now, and that's it. I mainly used it for myself when I had a ton of competing things to do with different priorities. </p>
-							<p> To pick what to show, it sorts every task by how much "slack time" each one has (how long you can safely put it off before it becomes impossible to finish on time), and subtracts the hours you'll be asleep from that math. I liked turning a vague idea like "just tell me what to do" into a real web app I actually could use and benefit from. </p>
+							<p> I got tired of all the task apps I tried, and I failed tracking things I needed to do by hand, so I built Flow Focus to only show you one task at a time, whatever is the single most important thing to do right now I mainly used it for myself when I had a ton of competing work to do with different priorities. </p>
+							<p> To pick what to show, it sorts every task by how much "slack time" each one has (how long you can safely put it off before it becomes impossible to finish on time), and subtracts the hours you'll be asleep from that math. I liked turning a vague idea like "just tell me what to do" into a real web app I actually could use and benefit from myself. </p>
 							<div class="project_links">
 								<button> <a href="https://github.com/alexcarron/flow-focus"> View on GitHub </a> </button>
 							</div>
@@ -286,7 +291,7 @@
 					<article class="project_card">
 						<h3> The Numbers Game </h3>
 						<p class="project_stack"> TypeScript, Discord.js </p>
-						<p> I made a turn-based party game for Discord voice calls, all driven by buttons, dropdowns, and popups instead of typed commands. The lobby auto-fills with whoever is in your voice channel. I paid a lot of attention to small details like a stable numbering system so the question numbers you see never shift mid-game, and making sure only the person whose turn it is can act. </p>
+						<p> I made a turn-based question answering party game for Discord voice calls, driven by buttons, dropdowns, and popups instead of commands. The lobby auto-fills with whoever is in your voice channel. I paid a lot of attention to small details like a stable numbering system so the question numbers you see never shift mid-game, and making sure only the person whose turn it is can act. </p>
 						<div class="project_links">
 							<button> <a href="https://github.com/alexcarron/the-numbers-game-bot"> View on GitHub </a> </button>
 						</div>
@@ -298,15 +303,6 @@
 						<p> My team and I built a face-finding game for a cloud course, and the part I owned was the infrastructure. The entire AWS backend is defined in Terraform, so one command sets the whole thing up and another command takes it all down. It's the best example I have of me working well beyond the front end. </p>
 						<div class="project_links">
 							<button> <a href="https://github.com/514-2245-2-team-6/terraform-infastructure"> View on GitHub </a> </button>
-						</div>
-					</article>
-
-					<article class="project_card">
-						<h3> Chat Server </h3>
-						<p class="project_stack"> Python, Flask, PostgreSQL </p>
-						<p> I built a backend for a chat app (users, communities, channels, messages, and auth) with a properly designed REST API and database schema. I drew out the endpoint map and the entity-relationship diagram before building it. </p>
-						<div class="project_links">
-							<button> <a href="https://github.com/alexcarron/chat-server"> View on GitHub </a> </button>
 						</div>
 					</article>
 				</div>
